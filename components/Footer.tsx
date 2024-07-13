@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Separator from './Separator';
 import NavMenu from './NavMenu';
+import Link from 'next/link';
 
 export default function Footer() {
   return (
@@ -25,44 +26,54 @@ export default function Footer() {
       <nav>
         <ul className='flex gap-4'>
           <li>
-            <Image
-              width={24}
-              height={24}
-              src='/images/shared/desktop/icon-facebook.svg'
-              alt='Facebook'
-            />
+            <Link href='/'>
+              <Image
+                width={24}
+                height={24}
+                src='/images/shared/desktop/icon-facebook.svg'
+                alt='Facebook'
+              />
+            </Link>
           </li>
           <li>
-            <Image
-              width={24}
-              height={24}
-              src='/images/shared/desktop/icon-youtube.svg'
-              alt='Youtube'
-            />
+            <Link href='/'>
+              <Image
+                width={24}
+                height={24}
+                src='/images/shared/desktop/icon-youtube.svg'
+                alt='Youtube'
+              />
+            </Link>
           </li>
           <li>
-            <Image
-              width={24}
-              height={24}
-              src='/images/shared/desktop/icon-twitter.svg'
-              alt='Twitter'
-            />
+            <Link href='/'>
+              <Image
+                width={24}
+                height={24}
+                src='/images/shared/desktop/icon-twitter.svg'
+                alt='Twitter'
+              />
+            </Link>
           </li>
           <li>
-            <Image
-              width={24}
-              height={24}
-              src='/images/shared/desktop/icon-pinterest.svg'
-              alt='Pinterest'
-            />
+            <Link href='/'>
+              <Image
+                width={24}
+                height={24}
+                src='/images/shared/desktop/icon-pinterest.svg'
+                alt='Pinterest'
+              />
+            </Link>
           </li>
           <li>
-            <Image
-              width={24}
-              height={24}
-              src='/images/shared/desktop/icon-instagram.svg'
-              alt='Instagram'
-            />
+            <Link href='/'>
+              <Image
+                width={24}
+                height={24}
+                src='/images/shared/desktop/icon-instagram.svg'
+                alt='Instagram'
+              />
+            </Link>
           </li>
         </ul>
       </nav>
