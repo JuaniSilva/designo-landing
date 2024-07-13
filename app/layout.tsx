@@ -21,12 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body
-        className={cn(
-          inter.variable,
-          'font-jost text-body-mobile lg:text-body'
-        )}
-      >
+      <body className={cn(inter.variable, 'font-jost text-body')}>
         <MobileMenuContextProvider>
           <Header />
           <div className='pt-24' />

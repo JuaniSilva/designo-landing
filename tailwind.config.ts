@@ -11,9 +11,14 @@ const config: Config = {
     extend: {
       backgroundImage: {
         'hero-pattern': 'url("/images/home/desktop/bg-pattern-hero-home.svg")',
+        'small-circle-pattern':
+          'url("/images/shared/desktop/bg-pattern-small-circle.svg")',
+        'cta-pattern':
+          'url("/images/shared/desktop/bg-pattern-call-to-action.svg")',
       },
       backgroundPosition: {
         'hero-pattern-position': 'left -4px center',
+        'cta-position': 'right -105% center',
       },
       colors: {
         'primary-peach': '#E7816B',
@@ -27,6 +32,8 @@ const config: Config = {
         jost: ['var(--font-jost)', ...fontFamily.sans],
       },
       spacing: {
+        'padding-body': '1.5rem',
+        'padding-body-tablet': '2.5rem',
         30: '7.5rem',
         content: '1110px',
       },
@@ -37,9 +44,11 @@ const config: Config = {
         'h2-mobile': ['1.75rem', '2.25rem'], // '1.75rem', '2rem
         h3: ['1.25rem', '1.625rem'],
         h4: ['0,9375rem', '1.375rem'],
+        CTA: ['2rem', '2.25rem'],
         body: ['1rem', '1.625rem'],
-        'body-mobile': ['0.9375rem', '1.5625rem'],
-        'mobile-menu': ['1.5rem', '1,5625rem'],
+        'body-small': ['0.9375rem', '1.5625rem'],
+        'mobile-menu': ['1.5rem', '1.5625rem'],
+        nav: ['0.875rem', '0.875rem'],
       },
       letterSpacing: {
         '2px': '2px',
