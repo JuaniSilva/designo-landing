@@ -10,9 +10,10 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'hero-pattern': 'url("/images/home/desktop/bg-pattern-hero-home.svg")',
+      },
+      backgroundPosition: {
+        'hero-pattern-position': 'left -4px center',
       },
       colors: {
         'primary-peach': '#E7816B',
@@ -26,14 +27,19 @@ const config: Config = {
         jost: ['var(--font-jost)', ...fontFamily.sans],
       },
       spacing: {
+        30: '7.5rem',
         content: '1110px',
       },
       fontSize: {
         h1: ['3rem', '3rem'],
+        'h1-mobile': ['2rem', '2.25rem'],
         h2: ['2.5rem', '3rem'],
+        'h2-mobile': ['1.75rem', '2.25rem'], // '1.75rem', '2rem
         h3: ['1.25rem', '1.625rem'],
+        h4: ['0,9375rem', '1.375rem'],
         body: ['1rem', '1.625rem'],
-        'mobile-menu': ['1.5rem', '1,5625'],
+        'body-mobile': ['0.9375rem', '1.5625rem'],
+        'mobile-menu': ['1.5rem', '1,5625rem'],
       },
       letterSpacing: {
         '2px': '2px',
