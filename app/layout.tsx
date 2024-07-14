@@ -5,6 +5,7 @@ import { cn } from '@/lib/utils';
 import Header from '@/components/Header';
 import { MobileMenuContextProvider } from '@/context/useMobileMenuContext';
 import MobileMenu from '@/components/MobileMenu';
+import Footer from '@/components/Footer';
 
 const inter = Jost({ subsets: ['latin'], variable: '--font-jost' });
 
@@ -27,6 +28,7 @@ export default function RootLayout({
           <div className='pt-24' />
           {children}
           <MobileMenu />
+          <Footer />
         </MobileMenuContextProvider>
       </body>
     </html>
