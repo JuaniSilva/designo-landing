@@ -29,7 +29,7 @@ export default function DesignoValues() {
     },
   ];
   return (
-    <Container className='p-padding-body md:p-padding-body-tablet py-20'>
+    <Container className='px-padding-body pt-20 md:px-padding-body-tablet'>
       <div className='mt-14 grid grid-cols-1 gap-20 md:gap-8 lg:grid-cols-2 lg:grid-rows-2'>
         {values.map((value) => (
           <Value key={value.title} {...value} />
