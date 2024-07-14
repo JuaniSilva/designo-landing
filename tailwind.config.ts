@@ -15,10 +15,13 @@ const config: Config = {
           'url("/images/shared/desktop/bg-pattern-small-circle.svg")',
         'cta-pattern':
           'url("/images/shared/desktop/bg-pattern-call-to-action.svg")',
+        'intro-web':
+          'url("/images/web-design/desktop/bg-pattern-intro-web.svg")',
       },
       backgroundPosition: {
         'hero-pattern-position': 'left -4px center',
         'cta-position': 'right -105% center',
+        'intro-web-position': 'right top',
       },
       colors: {
         'primary-peach': '#E7816B',
@@ -27,6 +30,7 @@ const config: Config = {
         'secondary-peach-light': '#FFAD9B',
         'secondary-dark-grey': '#333136',
         'secondary-light-grey': '#F1F3F5',
+        showcase: '#FDF3F0',
       },
       fontFamily: {
         jost: ['var(--font-jost)', ...fontFamily.sans],
