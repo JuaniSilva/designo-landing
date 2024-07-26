@@ -34,7 +34,7 @@ export default function Home() {
     },
   ];
   return (
-    <main className='relative min-h-screen'>
+    <main className='md:px-tablet-horizontal-spacing relative min-h-screen'>
       <Hero
         title='App Design'
         description='Our mobile designs bring intuitive digital solutions to your customers right at their fingertips.'

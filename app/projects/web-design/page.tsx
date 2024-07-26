@@ -48,7 +48,7 @@ export default function Home() {
     },
   ];
   return (
-    <main className='relative min-h-screen'>
+    <main className='md:px-tablet-horizontal-spacing relative min-h-screen'>
       <Hero
         title='Web Design'
         description='We build websites that serve as powerful marketing tools and bring memorable brand experiences.'

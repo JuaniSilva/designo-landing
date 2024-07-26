@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export const menuItems = [
   { label: 'Our Company', key: 'ourCompany', href: '/about' },
   { label: 'Locations', key: 'locations', href: '/locations' },
@@ -12,7 +14,7 @@ export default function MobileMenu() {
           key={item.key}
           className='menu-list-item origin-[-20px_50%] text-mobile-menu uppercase tracking-2px text-white'
         >
-          {item.label}
+          <Link href={item.href}>{item.label}</Link>
         </li>
       ))}
     </ul>

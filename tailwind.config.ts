@@ -17,11 +17,26 @@ const config: Config = {
           'url("/images/shared/desktop/bg-pattern-call-to-action.svg")',
         'intro-web':
           'url("/images/web-design/desktop/bg-pattern-intro-web.svg")',
+        'about-hero':
+          'url("/images/about/mobile/bg-pattern-hero-about-mobile.svg")',
+        'about-hero-desktop':
+          'url("/images/about/desktop/bg-pattern-hero-about-desktop.svg")',
+        'pattern-three-circles':
+          'url("/images/shared/desktop/bg-pattern-three-circles.svg")',
+        'contact-form-pattern':
+          'url("/images/contact/desktop/bg-pattern-hero-desktop.svg")',
+        'contact-form-pattern-mobile':
+          'url("/images/contact/mobile/bg-pattern-hero-contact-mobile.svg")',
       },
       backgroundPosition: {
         'hero-pattern-position': 'left -4px center',
-        'cta-position': 'right -105% center',
+        'cta-position': 'right -310px center',
+        'cta-position-tablet': 'right -165px center',
         'intro-web-position': 'right top',
+        'about-hero-position': 'right 10px top -150px',
+        'about-hero-desktop-position': 'left -112px top -420px',
+        'contact-form-position': 'left -122px top -100px',
+        'contact-form-position-mobile': 'left -92px top',
       },
       colors: {
         'primary-peach': '#E7816B',
@@ -36,8 +51,8 @@ const config: Config = {
         jost: ['var(--font-jost)', ...fontFamily.sans],
       },
       spacing: {
-        'padding-body': '1.5rem',
-        'padding-body-tablet': '2.5rem',
+        'mobile-horizontal-spacing': '1.5rem',
+        'tablet-horizontal-spacing': '2.5rem',
         30: '7.5rem',
         content: '1110px',
       },
@@ -47,8 +62,9 @@ const config: Config = {
         h2: ['2.5rem', '3rem'],
         'h2-mobile': ['1.75rem', '2.25rem'], // '1.75rem', '2rem
         h3: ['1.25rem', '1.625rem'],
-        h4: ['0,9375rem', '1.375rem'],
+        h4: ['0.9375rem', '1.375rem'],
         CTA: ['2rem', '2.25rem'],
+        'CTA-tablet': ['2.5rem', '2.5rem'],
         body: ['1rem', '1.625rem'],
         'body-small': ['0.9375rem', '1.5625rem'],
         'mobile-menu': ['1.5rem', '1.5625rem'],

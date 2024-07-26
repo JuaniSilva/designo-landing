@@ -42,7 +42,9 @@ export default function ProjectsContainer({
   );
 
   return (
-    <Container className={cn('grid grid-flow-row gap-5 px-5', className)}>
+    <Container
+      className={cn('grid grid-flow-row gap-6 px-6 md:px-0', className)}
+    >
       {filteredProjects.map((project) => (
         <ProjectCard
           key={project.title}

@@ -9,10 +9,10 @@ export default function Hero({
   description: string;
 }) {
   return (
-    <section className='bg-intro-web bg-intro-web-position relative overflow-hidden bg-primary-peach bg-no-repeat py-[105px] text-white'>
+    <section className='relative overflow-hidden bg-primary-peach bg-intro-web bg-intro-web-position bg-no-repeat py-[105px] text-white md:rounded-2xl'>
       <Container className='px-6 text-center'>
         <Heading level='1'>{title}</Heading>
-        <p className='mb-5 mt-4 max-w-[327px] text-body-small lg:text-body'>
+        <p className='mx-auto mb-5 mt-4 max-w-[327px] text-body-small md:max-w-[375px] lg:text-body'>
           {description}
         </p>
       </Container>

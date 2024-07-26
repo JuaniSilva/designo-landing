@@ -1,5 +1,7 @@
+import { cn } from '@/lib/utils';
 import { cva, VariantProps } from 'class-variance-authority';
-import React from 'react';
+import Link from 'next/link';
+import React, { ButtonHTMLAttributes } from 'react';
 
 const button = cva(
   'uppercase text-h4 px-5 py-4 rounded-lg tracking-[1px] transition-all font-medium',
@@ -12,21 +14,36 @@ const button = cva(
           'bg-primary-peach text-primary-white hover:bg-secondary-peach-light',
       },
     },
+    defaultVariants: {
+      variant: 'primary',
+    },
   }
 );
 
 interface ButtonProps
-  extends React.HTMLAttributes<HTMLButtonElement>,
-    VariantProps<typeof button> {}
+  extends ButtonHTMLAttributes<HTMLButtonElement>,
+    VariantProps<typeof button> {
+  asLink?: boolean;
+  href?: string;
+}
 
 export default function Button({
   children,
   variant,
+  asLink,
+  href,
   className,
   ...props
 }: ButtonProps) {
+  if (asLink && href) {
+    return (
+      <Link href={href} className={cn(button({ variant }), className)}>
+        {children}
+      </Link>
+    );
+  }
   return (
-    <button className={button({ className, variant })} {...props}>
+    <button className={cn(button({ variant }), className)} {...props}>
       {children}
     </button>
   );
