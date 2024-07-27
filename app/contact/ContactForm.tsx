@@ -38,49 +38,50 @@ export default function ContactForm() {
   };
 
   return (
-    <Container>
-      <div className='bg-contact-form-pattern-mobile bg-contact-form-position-mobile flex flex-col bg-primary-peach px-6 py-[4.5rem] md:rounded-2xl md:bg-contact-form-pattern md:bg-contact-form-position md:bg-no-repeat md:px-[58px] lg:flex-row lg:px-24'>
-        <div className='mb-12 text-center text-white md:text-left lg:flex-1'>
-          <span className='mb-6 block text-CTA'>Contact Us</span>
-          <p>
-            Ready to take it to the next level? Let’s talk about your project or
-            idea and find out how we can help your business grow. If you are
-            looking for unique digital experiences that’s relatable to your
-            users, drop us a line.
-          </p>
-        </div>
-        <form className='flex flex-col gap-6 lg:flex-1' onSubmit={handleSubmit}>
-          <Input
-            name='name'
-            type='text'
-            placeholder='Name'
-            errorMessage={error.name}
-          />
-          <Input
-            name='email'
-            type='email'
-            placeholder='Email Address'
-            errorMessage={error.email}
-          />
-          <Input
-            name='phone'
-            type='tel'
-            placeholder='Phone'
-            errorMessage={error.phone}
-          />
-          <TextArea
-            name='message'
-            placeholder='Your Message'
-            errorMessage={error.message}
-          />
-          <Button
-            type='submit'
-            className='mx-auto mt-4 px-12 md:ml-auto md:mr-0 md:mt-0'
-          >
-            Submit
-          </Button>
-        </form>
+    <div className='mx-auto flex max-w-content flex-col bg-primary-peach bg-contact-form-pattern-mobile bg-contact-form-position-mobile px-6 py-[4.5rem] md:rounded-2xl md:bg-contact-form-pattern md:bg-contact-form-position md:bg-no-repeat md:px-[58px] lg:flex-row lg:bg-left-bottom lg:px-24'>
+      <div className='mb-12 text-center text-white md:text-left lg:my-auto lg:flex-1'>
+        <span className='mb-6 block text-CTA lg:mb-8'>Contact Us</span>
+        <p className='max-w-[440px]'>
+          Ready to take it to the next level? Let’s talk about your project or
+          idea and find out how we can help your business grow. If you are
+          looking for unique digital experiences that’s relatable to your users,
+          drop us a line.
+        </p>
       </div>
-    </Container>
+      <form
+        className='flex w-full max-w-[380px] flex-col gap-6 lg:flex-1'
+        onSubmit={handleSubmit}
+      >
+        <Input
+          name='name'
+          type='text'
+          placeholder='Name'
+          errorMessage={error.name}
+        />
+        <Input
+          name='email'
+          type='email'
+          placeholder='Email Address'
+          errorMessage={error.email}
+        />
+        <Input
+          name='phone'
+          type='tel'
+          placeholder='Phone'
+          errorMessage={error.phone}
+        />
+        <TextArea
+          name='message'
+          placeholder='Your Message'
+          errorMessage={error.message}
+        />
+        <Button
+          type='submit'
+          className='mx-auto mt-4 px-12 md:ml-auto md:mr-0 md:mt-0'
+        >
+          Submit
+        </Button>
+      </form>
+    </div>
   );
 }

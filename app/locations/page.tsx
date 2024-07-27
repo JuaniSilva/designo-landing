@@ -1,4 +1,9 @@
+import { Metadata } from 'next';
 import LocationInfo, { ResponsiveImage } from './LocationInfo';
+
+export const metadata: Metadata = {
+  title: 'Locations',
+};
 
 export default function Home() {
   const canadaImages: ResponsiveImage[] = [
@@ -39,8 +44,8 @@ export default function Home() {
 
   return (
     <main className='relative min-h-screen md:px-tablet-horizontal-spacing'>
-      <div className='space-y-10'>
-        <LocationInfo title='Canada' images={canadaImages}>
+      <div className='mb-30 space-y-10'>
+        <LocationInfo title='Canada' images={canadaImages} reverse>
           <p className='flex flex-1 flex-col text-center md:text-left'>
             <span className='font-bold'> Designo Central Office</span>
             3886 Wellington Street
@@ -64,7 +69,7 @@ export default function Home() {
             P : (02) 6720 9092 <br />M : contact@designo.au
           </p>
         </LocationInfo>
-        <LocationInfo title='United Kingdom' images={ukImages}>
+        <LocationInfo title='United Kingdom' images={ukImages} reverse>
           <p className='flex flex-1 flex-col text-center md:text-left'>
             <span className='font-bold'> Designo UK Office</span>
             13 Colorado Way

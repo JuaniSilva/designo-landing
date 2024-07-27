@@ -10,7 +10,7 @@ import Footer from '@/components/Footer';
 const inter = Jost({ subsets: ['latin'], variable: '--font-jost' });
 
 export const metadata: Metadata = {
-  title: 'Designo ',
+  title: { default: 'Designo ', template: '%s | Designo' },
   description:
     'Designo is a multi-page marketing website template for a design agency.',
 };

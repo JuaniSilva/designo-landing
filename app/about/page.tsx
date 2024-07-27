@@ -1,6 +1,11 @@
 import InfoContent, { ResponsiveImage } from '@/components/InfoContent';
 import Hero from './Hero';
 import LocationsContainer from '@/components/LocationsContainer';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'About',
+};
 
 export default function Home() {
   const worldClassTalentImages: ResponsiveImage[] = [

@@ -24,6 +24,7 @@ interface LocationInfoProps {
   children: React.ReactNode;
   images: ResponsiveImage[];
   className?: string;
+  reverse?: boolean;
 }
 
 export default function LocationInfo({
@@ -31,10 +32,19 @@ export default function LocationInfo({
   children,
   images,
   className,
+  reverse = false,
 }: LocationInfoProps) {
   return (
-    <Container tag='section' className={cn(className)}>
-      <figure className='overflow-hidden md:mb-8 md:rounded-2xl'>
+    <Container
+      tag='section'
+      className={cn('lg:grid lg:grid-cols-3 lg:gap-[30px]', className)}
+    >
+      <figure
+        className={cn(
+          'row-start-1 h-full overflow-hidden md:mb-8 md:rounded-2xl',
+          reverse ? 'col-start-3' : 'col-start-1'
+        )}
+      >
         <picture>
           {images.map((image) => {
             if (!image.isDefault) {
@@ -50,7 +60,7 @@ export default function LocationInfo({
               <img
                 key={image.src}
                 src={image.src}
-                className='h-auto w-full'
+                className='h-full w-full object-cover'
                 alt={image.alt}
               />
             );
@@ -58,7 +68,7 @@ export default function LocationInfo({
         </picture>
       </figure>
       <div
-        className={`overflow-hidden bg-showcase bg-pattern-three-circles bg-left-top bg-no-repeat px-6 py-20 text-center md:rounded-2xl md:text-left`}
+        className={`row-start-1 overflow-hidden bg-showcase bg-pattern-three-circles bg-left-top bg-no-repeat px-6 py-20 text-center md:rounded-2xl md:text-left ${reverse ? 'col-start-1 col-end-3' : 'col-start-2 col-end-4'}`}
       >
         <div className='mx-auto md:max-w-[572px]'>
           <span className='mb-6 inline-block text-CTA text-primary-peach'>

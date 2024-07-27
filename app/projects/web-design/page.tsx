@@ -2,6 +2,11 @@ import { ShowcaseProps } from '@/components/Showcase';
 import Hero from '../Hero';
 import ShowcaseContainer from '@/components/ShowcaseContainer';
 import ProjectsContainer from '@/components/ProjectsContainer';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Web Design',
+};
 
 export default function Home() {
   const projects: ShowcaseProps[] = [

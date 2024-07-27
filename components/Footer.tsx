@@ -7,6 +7,11 @@ import CTA from './CTA';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
 import Container from './Container';
+import { FacebookLogo } from './icons/FacebookLogo';
+import { YoutubeLogo } from './icons/YoutubeLogo';
+import { TwitterLogo } from './icons/TwitterLogo';
+import { PinterestLogo } from './icons/PinterestLogo';
+import { InstagramLogo } from './icons/InstagramLogo';
 
 export default function Footer() {
   const path = usePathname();
@@ -49,55 +54,30 @@ export default function Footer() {
               P : +1 253-863-8967 <br />M : contact@designo.co
             </p>
             <nav className='md:self-end'>
-              <ul className='flex gap-4'>
+              <ul className='flex items-center gap-4'>
                 <li>
                   <Link href='/'>
-                    <Image
-                      width={24}
-                      height={24}
-                      src='/images/shared/desktop/icon-facebook.svg'
-                      alt='Facebook'
-                    />
+                    <FacebookLogo className='transition-colors hover:fill-secondary-peach-light' />
                   </Link>
                 </li>
                 <li>
                   <Link href='/'>
-                    <Image
-                      width={24}
-                      height={24}
-                      src='/images/shared/desktop/icon-youtube.svg'
-                      alt='Youtube'
-                    />
+                    <YoutubeLogo className='transition-colors hover:fill-secondary-peach-light' />
                   </Link>
                 </li>
                 <li>
                   <Link href='/'>
-                    <Image
-                      width={24}
-                      height={24}
-                      src='/images/shared/desktop/icon-twitter.svg'
-                      alt='Twitter'
-                    />
+                    <TwitterLogo className='transition-colors hover:fill-secondary-peach-light' />
                   </Link>
                 </li>
                 <li>
                   <Link href='/'>
-                    <Image
-                      width={24}
-                      height={24}
-                      src='/images/shared/desktop/icon-pinterest.svg'
-                      alt='Pinterest'
-                    />
+                    <PinterestLogo className='transition-colors hover:fill-secondary-peach-light' />
                   </Link>
                 </li>
                 <li>
                   <Link href='/'>
-                    <Image
-                      width={24}
-                      height={24}
-                      src='/images/shared/desktop/icon-instagram.svg'
-                      alt='Instagram'
-                    />
+                    <InstagramLogo className='transition-colors hover:fill-secondary-peach-light' />
                   </Link>
                 </li>
               </ul>
