@@ -13,7 +13,7 @@ export default function Showcase({
   alt,
 }: ShowcaseProps) {
   return (
-    <div className='flex flex-col overflow-hidden rounded-2xl md:flex-row md:items-center'>
+    <div className='flex flex-col overflow-hidden rounded-2xl md:flex-row md:items-center lg:flex-col'>
       <figure className='md:flex-1'>
         <img
           src={image}

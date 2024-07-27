@@ -48,13 +48,13 @@ export default function Home() {
     },
   ];
   return (
-    <main className='md:px-tablet-horizontal-spacing relative min-h-screen'>
+    <main className='relative min-h-screen md:px-tablet-horizontal-spacing'>
       <Hero
         title='Web Design'
         description='We build websites that serve as powerful marketing tools and bring memorable brand experiences.'
       />
       <ShowcaseContainer showcaseItems={projects} />
-      <ProjectsContainer />
+      <ProjectsContainer className='mb-30 mt-3' />
     </main>
   );
 }

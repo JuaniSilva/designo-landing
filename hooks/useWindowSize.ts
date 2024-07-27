@@ -1,8 +1,8 @@
 import { useEffect, useMemo, useState } from 'react';
 
 export default function useWindowSize() {
-  const [width, setWidth] = useState(window.innerWidth);
-  const [height, setHeight] = useState(window.innerHeight);
+  const [width, setWidth] = useState(0);
+  const [height, setHeight] = useState(0);
   useEffect(() => {
     const onResize = () => {
       setWidth(window.innerWidth);

@@ -27,6 +27,13 @@ export default function Home() {
       alt: 'Faceit website',
     },
     {
+      title: 'Todo',
+      description:
+        'A todo app that features cloud sync with light and dark mode',
+      image: '/images/app-design/desktop/image-todo.jpg',
+      alt: 'Todo website',
+    },
+    {
       title: 'Loopstudios',
       description: 'A VR experience app made for Loopstudios',
       image: '/images/app-design/desktop/image-loopstudios.jpg',
@@ -34,13 +41,13 @@ export default function Home() {
     },
   ];
   return (
-    <main className='md:px-tablet-horizontal-spacing relative min-h-screen'>
+    <main className='relative min-h-screen md:px-tablet-horizontal-spacing'>
       <Hero
         title='App Design'
         description='Our mobile designs bring intuitive digital solutions to your customers right at their fingertips.'
       />
       <ShowcaseContainer showcaseItems={projects} />
-      <ProjectsContainer />
+      <ProjectsContainer className='mb-30 mt-3' />
     </main>
   );
 }

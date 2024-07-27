@@ -28,13 +28,13 @@ export default function Home() {
   ];
 
   return (
-    <main className='md:px-tablet-horizontal-spacing relative min-h-screen'>
+    <main className='relative min-h-screen md:px-tablet-horizontal-spacing'>
       <Hero
         title='Graphic Design'
         description='We deliver eye-catching branding materials that are tailored to meet your business objectives.'
       />
       <ShowcaseContainer showcaseItems={projects} />
-      <ProjectsContainer />
+      <ProjectsContainer className='mb-30 mt-3' />
     </main>
   );
 }
