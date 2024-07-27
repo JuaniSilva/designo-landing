@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Container from '@/components/Container';
+import Heading from '@/components/Heading';
 import { cn } from '@/lib/utils';
 
 type BaseImage = {
@@ -71,9 +72,9 @@ export default function LocationInfo({
         className={`row-start-1 overflow-hidden bg-showcase bg-pattern-three-circles bg-left-top bg-no-repeat px-6 py-20 text-center md:rounded-2xl md:text-left ${reverse ? 'col-start-1 col-end-3' : 'col-start-2 col-end-4'}`}
       >
         <div className='mx-auto md:max-w-[572px]'>
-          <span className='mb-6 inline-block text-CTA text-primary-peach'>
+          <Heading className='mb-6 inline-block text-primary-peach' level='2'>
             {title}
-          </span>
+          </Heading>
           <div className='flex w-full flex-col md:mx-auto md:flex-row md:gap-6'>
             {children}
           </div>
