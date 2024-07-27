@@ -42,7 +42,7 @@ export default function ProjectsContainer({
         image: `/images/home/${device}/image-graphic-design.jpg`,
         className: path.includes('projects')
           ? 'lg:col-start-2'
-          : 'lg:col-start-2 lg:row-start-1',
+          : 'lg:col-start-2 lg:row-start-2',
       },
     ],
     [path, device]
