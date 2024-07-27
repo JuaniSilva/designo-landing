@@ -14,6 +14,7 @@ export default function ProjectsContainer({
   const path = usePathname();
 
   const { device } = useWindowSize();
+  console.log('🚀 ~ device:', device);
 
   const projects = useMemo(
     () => [
