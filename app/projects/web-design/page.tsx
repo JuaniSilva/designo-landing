@@ -58,6 +58,11 @@ export default function Home() {
         title='Web Design'
         description='We build websites that serve as powerful marketing tools and bring memorable brand experiences.'
       />
+      <img
+        src='/images/shared/desktop/bg-pattern-leaf.svg'
+        alt='pattern leaf'
+        className='absolute left-0 top-[100px] -z-10 hidden lg:block'
+      />
       <ShowcaseContainer showcaseItems={projects} />
       <ProjectsContainer className='mb-30 mt-3' />
     </main>

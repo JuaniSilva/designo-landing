@@ -37,6 +37,11 @@ export default function Home() {
         title='Graphic Design'
         description='We deliver eye-catching branding materials that are tailored to meet your business objectives.'
       />
+      <img
+        src='/images/shared/desktop/bg-pattern-leaf.svg'
+        alt='pattern leaf'
+        className='absolute left-0 top-[100px] -z-10 hidden lg:block'
+      />
       <ShowcaseContainer showcaseItems={projects} />
       <ProjectsContainer className='mb-30 mt-3' />
     </main>

@@ -46,6 +46,11 @@ export default function Home() {
         title='About Us'
         description='Founded in 2010, we are a creative agency that produces lasting results for our clients. We’ve partnered with many startups, corporations, and nonprofits alike to craft designs that make real impact. We’re always looking forward to creating brands, products, and digital experiences that connect with our clients’ audiences.'
       />
+      <img
+        src='/images/shared/desktop/bg-pattern-leaf.svg'
+        alt='pattern leaf'
+        className='absolute left-0 top-[320px] -z-10 hidden lg:block'
+      />
       <InfoContent
         title='World-class talent'
         images={worldClassTalentImages}
@@ -67,6 +72,11 @@ export default function Home() {
         </p>
       </InfoContent>
       <LocationsContainer />
+      <img
+        src='/images/shared/desktop/bg-pattern-leaf.svg'
+        alt='pattern leaf'
+        className='absolute bottom-[350px] left-[820px] -z-10 hidden lg:block'
+      />
       <InfoContent
         title='The real deal'
         images={theRealDealImages}

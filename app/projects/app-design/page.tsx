@@ -50,6 +50,11 @@ export default function Home() {
         title='App Design'
         description='Our mobile designs bring intuitive digital solutions to your customers right at their fingertips.'
       />
+      <img
+        src='/images/shared/desktop/bg-pattern-leaf.svg'
+        alt='pattern leaf'
+        className='absolute left-0 top-[100px] -z-10 hidden lg:block'
+      />
       <ShowcaseContainer showcaseItems={projects} />
       <ProjectsContainer className='mb-30 mt-3' />
     </main>
