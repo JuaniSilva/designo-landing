@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Heading from './Heading';
 import Image from 'next/image';
+import { cn } from '@/lib/utils';
 
 interface ProjectCardProps {
   title: string;
@@ -15,9 +16,9 @@ export default function ProjectCard({
   className,
 }: ProjectCardProps) {
   return (
-    <Link href={to} className={className}>
+    <Link href={to} className={cn(className, 'overflow-hidden rounded-2xl')}>
       <div
-        className='overlay flex h-[250px] w-full flex-col items-center justify-center gap-3 rounded-2xl bg-primary-black/50 bg-cover bg-center bg-no-repeat uppercase text-white bg-blend-multiply md:h-[200px] lg:h-full lg:min-h-[300px]'
+        className='overlay flex h-[250px] w-full flex-col items-center justify-center gap-3 bg-primary-black/50 bg-cover bg-center bg-no-repeat uppercase text-white bg-blend-multiply md:h-[200px] lg:h-full lg:min-h-[300px]'
         style={{ backgroundImage: `url("${image}")` }}
       >
         <Heading level='2' className=''>
