@@ -7,3 +7,9 @@
     text-wrap: balance;
   }
 }
+
+.overlay:hover {
+  border-style: solid;
+  border-image-slice: fill 1;
+  border-image-source: linear-gradient(#e7826b9a, #e7826b9a);
+}

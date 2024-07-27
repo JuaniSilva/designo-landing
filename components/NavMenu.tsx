@@ -7,7 +7,10 @@ export default function NavMenu({ className }: { className?: string }) {
     <nav className={cn('text-white', className)}>
       <ul className='flex w-full flex-col gap-8 font-normal md:flex-row md:gap-[42px]'>
         {menuItems.map((item) => (
-          <li key={item.key} className='text-nav uppercase tracking-2px'>
+          <li
+            key={item.key}
+            className='text-nav uppercase tracking-2px hover:underline'
+          >
             <Link href={item.href}>{item.label}</Link>
           </li>
         ))}

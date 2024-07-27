@@ -6,12 +6,18 @@ interface ProjectCardProps {
   title: string;
   to: string;
   image: string;
+  className?: string;
 }
-export default function ProjectCard({ title, to, image }: ProjectCardProps) {
+export default function ProjectCard({
+  title,
+  to,
+  image,
+  className,
+}: ProjectCardProps) {
   return (
-    <Link href={to}>
+    <Link href={to} className={className}>
       <div
-        className='flex h-[250px] w-full flex-col items-center justify-center gap-3 rounded-2xl bg-primary-black/50 bg-cover bg-center bg-no-repeat uppercase text-white bg-blend-multiply'
+        className='overlay flex h-[250px] w-full flex-col items-center justify-center gap-3 rounded-2xl bg-primary-black/50 bg-cover bg-center bg-no-repeat uppercase text-white bg-blend-multiply md:h-[200px] lg:h-full lg:min-h-[300px]'
         style={{ backgroundImage: `url("${image}")` }}
       >
         <Heading level='2' className=''>

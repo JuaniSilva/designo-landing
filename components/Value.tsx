@@ -21,14 +21,14 @@ export default function Value({
   return (
     <div
       className={cn(
-        'flex flex-col items-center md:flex-row md:gap-12',
+        'flex flex-col items-center md:flex-row md:gap-12 lg:flex-col',
         className
       )}
     >
       <figure
         className={cn(
           'relative mb-12 aspect-square w-full max-w-[202px] md:mb-0',
-          'after:bg-small-circle-pattern after:absolute after:left-1/2 after:top-1/2 after:h-full after:w-full after:-translate-x-1/2 after:-translate-y-1/2 after:bg-cover after:bg-no-repeat',
+          'after:absolute after:left-1/2 after:top-1/2 after:h-full after:w-full after:-translate-x-1/2 after:-translate-y-1/2 after:bg-small-circle-pattern after:bg-cover after:bg-no-repeat',
           bgRotation === 90
             ? 'after:rotate-90'
             : bgRotation === -90
@@ -38,11 +38,14 @@ export default function Value({
       >
         <img src={src} alt={alt} />
       </figure>
-      <div className='flex flex-col items-center md:items-start'>
-        <Heading level='3' className='mb-8 uppercase md:mb-4 md:text-left'>
+      <div className='flex flex-col items-center md:items-start lg:items-center'>
+        <Heading
+          level='3'
+          className='mb-8 uppercase md:mb-4 md:text-left lg:text-center'
+        >
           {title}
         </Heading>
-        <p className='text-center md:text-left'>{description}</p>
+        <p className='text-center md:text-left lg:text-center'>{description}</p>
       </div>
     </div>
   );

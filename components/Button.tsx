@@ -4,7 +4,7 @@ import Link from 'next/link';
 import React, { ButtonHTMLAttributes } from 'react';
 
 const button = cva(
-  'uppercase text-h4 px-5 py-4 rounded-lg tracking-[1px] transition-all font-medium',
+  'uppercase text-h4 px-5 py-4 rounded-lg tracking-[1px] transition-colors duration-200 font-medium',
   {
     variants: {
       variant: {
