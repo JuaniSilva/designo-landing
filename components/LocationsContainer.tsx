@@ -30,7 +30,7 @@ const locations: LocationProps[] = [
 export default function LocationsContainer() {
   return (
     <Container tag={'section'}>
-      <div className='flex flex-col gap-12 py-30'>
+      <div className='flex flex-col gap-12 py-30 lg:flex-row lg:justify-evenly'>
         {locations.map((location) => (
           <Location
             key={location.location}

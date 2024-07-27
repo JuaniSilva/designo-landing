@@ -5,8 +5,12 @@ import LocationsContainer from '@/components/LocationsContainer';
 export default function Home() {
   const worldClassTalentImages: ResponsiveImage[] = [
     {
+      src: '/images/about/desktop/image-world-class-talent.jpg',
+      media: '(min-width: 1024px)',
+    },
+    {
       src: '/images/about/tablet/image-world-class-talent.jpg',
-      media: '(min-width: 768px) and (max-width: 1023px)',
+      media: '(min-width: 768px)',
     },
     {
       src: '/images/about/mobile/image-world-class-talent.jpg',
@@ -17,8 +21,12 @@ export default function Home() {
 
   const theRealDealImages: ResponsiveImage[] = [
     {
+      src: '/images/about/desktop/image-real-deal.jpg',
+      media: '(min-width: 1024px)',
+    },
+    {
       src: '/images/about/tablet/image-real-deal.jpg',
-      media: '(min-width: 768px) and (max-width: 1023px)',
+      media: '(min-width: 768px)',
     },
     {
       src: '/images/about/mobile/image-real-deal.jpg',
@@ -54,7 +62,12 @@ export default function Home() {
         </p>
       </InfoContent>
       <LocationsContainer />
-      <InfoContent title='The real deal' images={theRealDealImages}>
+      <InfoContent
+        title='The real deal'
+        images={theRealDealImages}
+        reverse
+        className='lg:mb-30'
+      >
         <p>
           As strategic partners in our clients’ businesses, we are ready to take
           on any challenge as our own. Solving real problems require empathy and
@@ -64,10 +77,9 @@ export default function Home() {
         </p>
         <br />
         <p>
-          We are visual storytellers in making brands more meaningful,
-          memorable, and accessible. By understanding your customers at a deeper
-          level — their wants, needs, and values — we can make your brand stand
-          out in a crowded market.
+          We are visual storytellers in appealing and captivating ways. By
+          combining business and marketing strategies, we inspire audiences to
+          take action and drive real results.
         </p>
       </InfoContent>
     </main>

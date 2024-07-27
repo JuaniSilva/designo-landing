@@ -6,10 +6,10 @@ import NavMenu from './NavMenu';
 
 export default function Header() {
   return (
-    <header className='absolute z-10 h-24 w-full bg-white'>
+    <header className='absolute z-10 h-24 w-full bg-white px-mobile-horizontal-spacing md:px-tablet-horizontal-spacing'>
       <Container
         tag='nav'
-        className='z-0 flex h-full items-center justify-between px-mobile-horizontal-spacing md:px-tablet-horizontal-spacing lg:px-0'
+        className='z-0 flex h-full items-center justify-between'
       >
         <Link href='/'>
           <Image
